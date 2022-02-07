@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Create</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220207185916">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.preloader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			background-color: #21D4FD;
+			background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+			z-index: 1001;
+			color: #eee;
+		}
+
+
+		.preloader__image {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			width: 70px;
+			height: 70px;
+			margin-top: -35px;
+			margin-left: -35px;
+			text-align: center;
+			animation: preloader-rotate 2s infinite linear;
+		}
+
+		@keyframes preloader-rotate {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+
+<body class="_white">
+	<div class="preloader">
+		<svg class="preloader__image" role="img" width="70px" height="70px" viewBox="0 0 520 520">
+			<path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			</path>
+		</svg>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__body">
+				<div class="header__logo logo">
+					<a href="home.html" class="logo__icon"></a>
+					<a href="home.html" class="logo__text logo__text_menu">CryptoKet</a>
+				</div>
+				<div class="header__search">
+					<div class="search-form">
+						<button type="button" class="search-form__icon _icon-search"></button>
+						<form action="#" class="search-form__item">
+							<button type="submit" class="search-form__btn _icon-search"></button>
+							<input autocomplete="off" type="text" name="form[]" placeholder="Search Item Here" class="search-form__input">
+						</form>
+					</div>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Explore</a></li>
+							<li class="menu__item"><a href="portfolio.html" class="menu__link">My Items</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Following</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__buttons" data-da=".menu__body, 820, 2">
+					<a href="create.html" class="header__button  button button_violet">Create</a>
+					<a href="" class="header__button button">Connect</a>
+				</div>
+				<div class="header__switch switch">
+					<input class="switch__input" id="switch" type="checkbox" /><label class="switch__btn" for="switch"></label>
+				</div>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__new new">
+				<div class="new__container">
+					<div class="new__title title">Create new Item</div>
+					<div class="new__content">
+						<form action="#" enctype="multipart/form-data" method="post" class="new__form form">
+							<div class="form__item">
+								<div class="form__label">Upload File</div>
+								<div class="file">
+									<div class="file__item">
+										<input id="formImage" accept=".jpg, .jpeg, .png, .webm, .gif, .svg, .mp3, .mp4" type="file" name="formFile" data-error="Ошибка" class="file__input">
+										<div class="file__button button-file">
+											<div class="button-file__format">JPG, PNG, GIF, SVG, WEBM, MP3, MP4. Max 100mb.</div>
+											<div class="button-file__icon _icon-image">
+												<div id="formPreview" class="file__preview"></div>
+											</div>
+											<div class="button-file__text"><span>Drag and Drop File</span> or
+												<span>browse media on your device</span>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="name">Name</label>
+								<input autocomplete="off" id="name" type="text" name="formName" data-error="Ошибка" placeholder="Item Name" class="form__input  input">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="description">Description</label>
+								<textarea id="description" autocomplete="off" name="formDescription" placeholder="Decription of your item" data-error="Ошибка" class="form__input input_textarea input"></textarea>
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="price">Price</label>
+								<div class="form__price">
+									<input autocomplete="off" id="price" type="text" name="formPrice" placeholder="Enter Price" class="form__input form__input_price input">
+									<div class="select__price">
+										<select name="form[]" class="form">
+											<option value="1" selected>ETH</option>
+											<option value="2">BTC</option>
+											<option value="3">USDT</option>
+											<option value="4">BNB</option>
+											<option value="5">ADA</option>
+											<option value="6">SOL</option>
+											<option value="7">THETA</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form__btn"><button type="submit" class="button form__button button_violet">Create Item</button></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__body body-footer">
+				<div class="body-footer__container">
+					<div class="body-footer__subscribe subscribe">
+						<div class="subscribe__logo logo">
+							<a href="home.html" class="logo__icon"></a>
+							<a href="home.html" class="logo__text">CryptoKet</a>
+						</div>
+						<div class="subscribe__title">Get the lastes Updates</div>
+						<form action="#" class="subscribe__form">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your Email" class="subscribe__input input">
+							<button type="submit" class="subscribe__button button button_violet">Email Me!</button>
+						</form>
+					</div>
+					<div class="body-footer__menu menu-footer">
+						<div class="menu-footer__title">CryptoKet</div>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Explore</a> </li>
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">How it Works</a> </li>
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Contact Us</a> </li>
+						</ul>
+					</div>
+					<div class="body-footer__menu menu-footer">
+						<div class="menu-footer__title">Support</div>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Help center</a> </li>
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Terms of service</a> </li>
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Legal</a> </li>
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Privacy policy</a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<a href="" class="footer__right">CrpytoKet, Inc. All Rights Reserved</a>
+					<div class="footer__social social">
+						<a href="" class="social__item _icon-insta"></a>
+						<a href="" class="social__item _icon-tw"></a>
+						<a href="" class="social__item _icon-tel"></a>
+						<a href="" class="social__item _icon-soc"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="popup1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content checkout">
+				<h2 class="checkout__title">Check Out</h2>
+				<div class="checkout__content">
+					<div class="checkout__subtitles">
+						<div class="checkout__subtitle">Item</div>
+						<div class="checkout__subtitle">Subtotal</div>
+					</div>
+					<div class="checkout__items">
+						<div class="checkout__item item-checkout">
+							<a href="" class="item-checkout__image-ibg">
+								<picture><source srcset="img/product/01.webp"type="image/webp"><img src="img/product/01.jpg?_v=1644253156388" alt=""></picture>
+							</a>
+							<div class="item-checkout__info">
+								<div class="item-checkout__name">Mia Ayana</div>
+								<div class="item-checkout__product">Abstact Smoke Red Blue</div>
+							</div>
+							<div class="item-checkout__sum">4.5 <span>ETH</span></div>
+						</div>
+						<div class="checkout__item item-checkout">
+							<a href="" class="item-checkout__image-ibg">
+								<picture><source srcset="img/product/01.webp"type="image/webp"><img src="img/product/01.jpg?_v=1644253156388" alt=""></picture>
+							</a>
+							<div class="item-checkout__info">
+								<div class="item-checkout__name">Mia Ayana</div>
+								<div class="item-checkout__product">Abstact Smoke Red Blue</div>
+							</div>
+							<div class="item-checkout__sum">4.5 <span>ETH</span></div>
+						</div>
+					</div>
+					<div class="checkout__total total">
+						<div class="total__label">Total</div>
+						<div class="total__sum">4.5<span> ETH</span></div>
+					</div>
+				</div>
+				<div class="checkout__buttons">
+					<button data-popup="#popup2" type="button" class=" checkout__button button button_violet">Checkout</button>
+					<button data-close type="button" class=" checkout__button button popup__close">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content payment">
+				<button data-close type="button" class="payment__close popup__close">
+				</button>
+				<div class="payment__title">Payment Successful</div>
+				<div class="payment__body">
+					<div class="payment__image-ibg">
+						<picture><source srcset="img/product/01.webp"type="image/webp"><img src="img/product/01.jpg?_v=1644253156388" alt=""></picture>
+					</div>
+					<div class="payment__info info">
+						You successfully purchased <a href="" class="info__product">Abstact Smoke Red Blue</a> from <a href="" class="info__name">Mia Ayana</a>
+					</div>
+				</div>
+				<div class="payment__footer footer-payment">
+					<div class="footer-payment__title">Share</div>
+					<div class="footer-payment__social social-items">
+						<a href="" class="social-item__link _icon-insta"></a>
+						<a href="" class="social-item__link _icon-tw"></a>
+						<a href="" class="social-item__link _icon-tel"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20220207185916"></script>
+</body>
+
+</html>

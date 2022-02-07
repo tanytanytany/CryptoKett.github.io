@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220207185916">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.preloader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			background-color: #21D4FD;
+			background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+			z-index: 1001;
+			color: #eee;
+		}
+
+
+		.preloader__image {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			width: 70px;
+			height: 70px;
+			margin-top: -35px;
+			margin-left: -35px;
+			text-align: center;
+			animation: preloader-rotate 2s infinite linear;
+		}
+
+		@keyframes preloader-rotate {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+
+<body class="">
+	<div class="preloader">
+		<svg class="preloader__image" role="img" width="70px" height="70px" viewBox="0 0 520 520">
+			<path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			</path>
+		</svg>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__body">
+				<div class="header__logo logo">
+					<a href="home.html" class="logo__icon"></a>
+					<a href="home.html" class="logo__text logo__text_menu">CryptoKet</a>
+				</div>
+				<div class="header__search">
+					<div class="search-form">
+						<button type="button" class="search-form__icon _icon-search"></button>
+						<form action="#" class="search-form__item">
+							<button type="submit" class="search-form__btn _icon-search"></button>
+							<input autocomplete="off" type="text" name="form[]" placeholder="Search Item Here" class="search-form__input">
+						</form>
+					</div>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Explore</a></li>
+							<li class="menu__item"><a href="portfolio.html" class="menu__link">My Items</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Following</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__buttons" data-da=".menu__body, 820, 2">
+					<a href="create.html" class="header__button  button button_violet">Create</a>
+					<a href="" class="header__button button">Connect</a>
+				</div>
+				<div class="header__switch switch">
+					<input class="switch__input" id="switch" type="checkbox" /><label class="switch__btn" for="switch"></label>
+				</div>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__mainblock mainblock">
+				<div class="mainblock__container">
+					<div class="mainblock__body">
+						<h1 class="mainblock__title">Discover, collect, and sell extraordinary NFTs</h1>
+					</div>
+				</div>
+			</section>
+			<section class="page__sellers sellers">
+				<div class="sellers__container">
+					<h2 class="sellers__title title">Top Sellers</h2>
+					<div class="sellers__slider">
+						<div class="sellers__swiper">
+							<div class="sellers__slide slide-sellers">
+								<div class="slide-sellers__num">1</div>
+								<a href="portfolio.html" class="slide-sellers__image-ibg">
+									<picture><source srcset="img/sellers/01.webp"type="image/webp"><img src="img/sellers/01.jpg?_v=1644253156388" alt="seller"></picture>
+								</a>
+								<div class="slide-sellers__body">
+									<a href="portfolio.html" class="slide-sellers__name">Mia Ayana</a>
+									<div class="slide-sellers__price">5.250<span> ETH</span></div>
+
+								</div>
+							</div>
+							<div class="sellers__slide slide-sellers">
+								<div class="slide-sellers__num">2</div>
+								<a href="" class="slide-sellers__image-ibg">
+									<picture><source srcset="img/sellers/02.webp"type="image/webp"><img src="img/sellers/02.jpg?_v=1644253156388" alt="seller"></picture>
+								</a>
+								<div class="slide-sellers__body">
+									<a href="" class="slide-sellers__name">Rian Leon</a>
+									<div class="slide-sellers__price">5.250<span> ETH</span></div>
+
+								</div>
+							</div>
+							<div class="sellers__slide slide-sellers">
+								<div class="slide-sellers__num">3</div>
+								<a href="" class="slide-sellers__image-ibg">
+									<picture><source srcset="img/sellers/03.webp"type="image/webp"><img src="img/sellers/03.jpg?_v=1644253156388" alt="seller"></picture>
+								</a>
+								<div class="slide-sellers__body">
+									<a href="" class="slide-sellers__name">Black Glass</a>
+									<div class="slide-sellers__price">5.250<span> ETH</span></div>
+
+								</div>
+							</div>
+							<div class="sellers__slide slide-sellers">
+								<div class="slide-sellers__num">4</div>
+								<a href="" class="slide-sellers__image-ibg">
+									<picture><source srcset="img/sellers/04.webp"type="image/webp"><img src="img/sellers/04.jpg?_v=1644253156388" alt="seller"></picture>
+								</a>
+								<div class="slide-sellers__body">
+									<a href="" class="slide-sellers__name">Mia Ayana</a>
+									<div class="slide-sellers__price">5.250<span> ETH</span></div>
+
+								</div>
+							</div>
+							<div class="sellers__slide slide-sellers">
+								<div class="slide-sellers__num">5</div>
+								<a href="" class="slide-sellers__image-ibg">
+									<picture><source srcset="img/sellers/06.webp"type="image/webp"><img src="img/sellers/06.jpg?_v=1644253156388" alt="seller"></picture>
+								</a>
+								<div class="slide-sellers__body">
+									<a href="" class="slide-sellers__name">Mia Ayana</a>
+									<div class="slide-sellers__price">5.250<span> ETH</span></div>
+
+								</div>
+							</div>
+							<div class="sellers__slide slide-sellers">
+								<div class="slide-sellers__num">6</div>
+								<a href="" class="slide-sellers__image-ibg">
+									<picture><source srcset="img/sellers/07.webp"type="image/webp"><img src="img/sellers/07.jpg?_v=1644253156388" alt="seller"></picture>
+								</a>
+								<div class="slide-sellers__body">
+									<a href="" class="slide-sellers__name">Mia Ayana</a>
+									<div class="slide-sellers__price">5.250<span> ETH</span></div>
+
+								</div>
+							</div>
+
+
+						</div>
+						<div class="sellers__arrows">
+							<div class="sellers__arrow sellers__arrow_prev _icon-left"></div>
+							<div class="sellers__arrow sellers__arrow_next _icon-right"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__products products">
+				<div class="products__container">
+					<h2 class="products__title title">Hot Bids</h2>
+					<div class="products__items">
+						<article data-pid="1" class="products__item item-product">
+							<a href="product.html" class="item-product__image-ibg">
+								<picture><source srcset="img/bids/01.webp"type="image/webp"><img src="img/bids/01.jpg?_v=1644253156388" alt="bid"></picture>
+							</a>
+							<div class="item-product__body">
+								<h3><a href="product.html" class="item-product__title">Abstact Smoke Red Blue</a></h3>
+								<div class="item-product__info">
+									<div class="item-product__price">1.25 <span>ETH</span> </div>
+									<div class="item-product__like _icon-like1">92</div>
+								</div>
+							</div>
+						</article>
+						<article data-pid="2" class="products__item item-product">
+							<a href="" class="item-product__image-ibg">
+								<picture><source srcset="img/bids/02.webp"type="image/webp"><img src="img/bids/02.jpg?_v=1644253156388" alt="bid"></picture>
+							</a>
+							<div class="item-product__body">
+								<h3><a href="" class="item-product__title">Mountain Landscape</a></h3>
+								<div class="item-product__info">
+									<div class="item-product__price">0.25 <span>ETH</span> </div>
+									<div class="item-product__like _icon-like1">26</div>
+								</div>
+							</div>
+						</article>
+						<article data-pid="3" class="products__item item-product">
+							<a href="" class="item-product__image-ibg">
+								<picture><source srcset="img/bids/03.webp"type="image/webp"><img src="img/bids/03.jpg?_v=1644253156388" alt="bid"></picture>
+							</a>
+							<div class="item-product__body">
+								<h3><a href="" class="item-product__title">Paint Color on Wall</a></h3>
+								<div class="item-product__info">
+									<div class="item-product__price">0.80 <span>ETH</span> </div>
+									<div class="item-product__like _icon-like1">15</div>
+								</div>
+							</div>
+						</article>
+						<article data-pid="4" class="products__item item-product">
+							<a href="" class="item-product__image-ibg">
+								<picture><source srcset="img/bids/04.webp"type="image/webp"><img src="img/bids/04.jpg?_v=1644253156388" alt="bid"></picture>
+							</a>
+							<div class="item-product__body">
+								<h3><a href="" class="item-product__title">Abstract Patern</a></h3>
+								<div class="item-product__info">
+									<div class="item-product__price">1.60 <span>ETH</span> </div>
+									<div class="item-product__like _icon-like1">92</div>
+								</div>
+							</div>
+						</article>
+						<article data-pid="5" class="products__item item-product">
+							<a href="" class="item-product__image-ibg">
+								<picture><source srcset="img/bids/05.webp"type="image/webp"><img src="img/bids/05.jpg?_v=1644253156388" alt="bid"></picture>
+							</a>
+							<div class="item-product__body">
+								<a href="" class="item-product__title">White Line Grafiti</a>
+								<div class="item-product__info">
+									<div class="item-product__price">1.09 <span>ETH</span> </div>
+									<div class="item-product__like _icon-like1">92</div>
+								</div>
+							</div>
+						</article>
+						<article data-pid="6" class="products__item item-product">
+							<a href="" class="item-product__image-ibg">
+								<picture><source srcset="img/bids/06.webp"type="image/webp"><img src="img/bids/06.jpg?_v=1644253156388" alt="bid"></picture>
+							</a>
+							<div class="item-product__body">
+								<h3><a href="" class="item-product__title">Abstract Triangle</a></h3>
+								<div class="item-product__info">
+									<div class="item-product__price">1.25 <span>ETH</span> </div>
+									<div class="item-product__like _icon-like1">92</div>
+								</div>
+							</div>
+						</article>
+						<article data-pid="7" class="products__item item-product">
+							<a href="" class="item-product__image-ibg">
+								<picture><source srcset="img/bids/07.webp"type="image/webp"><img src="img/bids/07.jpg?_v=1644253156388" alt="bid"></picture>
+							</a>
+							<div class="item-product__body">
+								<h3><a href="" class="item-product__title">Lake Landscape</a></h3>
+								<div class="item-product__info">
+									<div class="item-product__price">1.25 <span>ETH</span> </div>
+									<div class="item-product__like _icon-like1">92</div>
+								</div>
+							</div>
+						</article>
+						<article data-pid="8" class="products__item item-product">
+							<a href="" class="item-product__image-ibg">
+								<picture><source srcset="img/bids/08.webp"type="image/webp"><img src="img/bids/08.jpg?_v=1644253156388" alt="bid"></picture>
+							</a>
+							<div class="item-product__body">
+								<h3><a href="" class="item-product__title">Blue Red Art</a></h3>
+								<div class="item-product__info">
+									<div class="item-product__price">1.25 <span>ETH</span> </div>
+									<div class="item-product__like _icon-like1">92</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="products__footer">
+						<a href="" class="products__more button button_more">Load More</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__body body-footer">
+				<div class="body-footer__container">
+					<div class="body-footer__subscribe subscribe">
+						<div class="subscribe__logo logo">
+							<a href="home.html" class="logo__icon"></a>
+							<a href="home.html" class="logo__text">CryptoKet</a>
+						</div>
+						<div class="subscribe__title">Get the lastes Updates</div>
+						<form action="#" class="subscribe__form">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your Email" class="subscribe__input input">
+							<button type="submit" class="subscribe__button button button_violet">Email Me!</button>
+						</form>
+					</div>
+					<div class="body-footer__menu menu-footer">
+						<div class="menu-footer__title">CryptoKet</div>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Explore</a> </li>
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">How it Works</a> </li>
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Contact Us</a> </li>
+						</ul>
+					</div>
+					<div class="body-footer__menu menu-footer">
+						<div class="menu-footer__title">Support</div>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Help center</a> </li>
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Terms of service</a> </li>
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Legal</a> </li>
+							<li class="menu-footer__item"> <a href="" class="menu-footer__link">Privacy policy</a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<a href="" class="footer__right">CrpytoKet, Inc. All Rights Reserved</a>
+					<div class="footer__social social">
+						<a href="" class="social__item _icon-insta"></a>
+						<a href="" class="social__item _icon-tw"></a>
+						<a href="" class="social__item _icon-tel"></a>
+						<a href="" class="social__item _icon-soc"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<div id="popup1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content checkout">
+				<h2 class="checkout__title">Check Out</h2>
+				<div class="checkout__content">
+					<div class="checkout__subtitles">
+						<div class="checkout__subtitle">Item</div>
+						<div class="checkout__subtitle">Subtotal</div>
+					</div>
+					<div class="checkout__items">
+						<div class="checkout__item item-checkout">
+							<a href="" class="item-checkout__image-ibg">
+								<picture><source srcset="img/product/01.webp"type="image/webp"><img src="img/product/01.jpg?_v=1644253156388" alt=""></picture>
+							</a>
+							<div class="item-checkout__info">
+								<div class="item-checkout__name">Mia Ayana</div>
+								<div class="item-checkout__product">Abstact Smoke Red Blue</div>
+							</div>
+							<div class="item-checkout__sum">4.5 <span>ETH</span></div>
+						</div>
+						<div class="checkout__item item-checkout">
+							<a href="" class="item-checkout__image-ibg">
+								<picture><source srcset="img/product/01.webp"type="image/webp"><img src="img/product/01.jpg?_v=1644253156388" alt=""></picture>
+							</a>
+							<div class="item-checkout__info">
+								<div class="item-checkout__name">Mia Ayana</div>
+								<div class="item-checkout__product">Abstact Smoke Red Blue</div>
+							</div>
+							<div class="item-checkout__sum">4.5 <span>ETH</span></div>
+						</div>
+					</div>
+					<div class="checkout__total total">
+						<div class="total__label">Total</div>
+						<div class="total__sum">4.5<span> ETH</span></div>
+					</div>
+				</div>
+				<div class="checkout__buttons">
+					<button data-popup="#popup2" type="button" class=" checkout__button button button_violet">Checkout</button>
+					<button data-close type="button" class=" checkout__button button popup__close">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content payment">
+				<button data-close type="button" class="payment__close popup__close">
+				</button>
+				<div class="payment__title">Payment Successful</div>
+				<div class="payment__body">
+					<div class="payment__image-ibg">
+						<picture><source srcset="img/product/01.webp"type="image/webp"><img src="img/product/01.jpg?_v=1644253156388" alt=""></picture>
+					</div>
+					<div class="payment__info info">
+						You successfully purchased <a href="" class="info__product">Abstact Smoke Red Blue</a> from <a href="" class="info__name">Mia Ayana</a>
+					</div>
+				</div>
+				<div class="payment__footer footer-payment">
+					<div class="footer-payment__title">Share</div>
+					<div class="footer-payment__social social-items">
+						<a href="" class="social-item__link _icon-insta"></a>
+						<a href="" class="social-item__link _icon-tw"></a>
+						<a href="" class="social-item__link _icon-tel"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20220207185916"></script>
+</body>
+
+</html>
